@@ -1,14 +1,14 @@
-# RDK4 SBC OBDII Example
+# RDK4 SBC CAN Example
 
-Rutronik Development Kit 4 Programmable System-on-Chip CY8C4149AZE-S598 "System Basis Chip OBDII Example". 
+Rutronik Development Kit 4 Programmable System-on-Chip CY8C4149AZE-S598 "System Basis Chip Example". 
 
-This application is intended to be used as a reference firmware example for the developers who need to quick-start with PSoC4100S Max and System Basis Chip TLE9262-3BQXV33 CANFD OBD-II protocol.
+This application is intended to be used as a reference firmware example for the developers who need to quick-start with PSoC4100S Max and System Basis Chip TLE9262-3BQXV33 CANFD.
 
  <img src="images/rdk4_top.jpg" style="zoom:20%;" />
 
 ## Requirements
 
-- [ModusToolbox® software](https://www.infineon.com/cms/en/design-support/tools/sdk/modustoolbox-software/) v3.1
+- [ModusToolbox® software](https://www.infineon.com/cms/en/design-support/tools/sdk/modustoolbox-software/) v3.2
 - The latest hardware release [RDK4 Rev2](https://github.com/RutronikSystemSolutions/RDK4_Hardware_Files).
 
 ## Using the code example
