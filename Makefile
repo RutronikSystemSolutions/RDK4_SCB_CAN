@@ -46,7 +46,7 @@ TARGET=APP_RDK4
 #
 # If APPNAME is edited, ensure to update or regenerate launch
 # configurations for your IDE.
-APPNAME=rdk4-sbc-obd2-example
+APPNAME=rdk4-sbc-can
 
 # Name of toolchain to use. Options include:
 #

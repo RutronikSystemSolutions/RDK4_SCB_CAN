@@ -1,13 +1,13 @@
 /******************************************************************************
 * File Name:   main.c
 *
-* Description: This is the source code for the RDK4 SBC Example
+* Description: This is the source code for the RDK4 SBC CAN Example
 *              Application for ModusToolbox.
 *
 * Related Document: See README.md
 *
 *
-*  Created on: 2023-03-13
+*  Created on: 2024-05-08
 *  Company: Rutronik Elektronische Bauelemente GmbH
 *  Address: Jonavos g. 30, Kaunas 44262, Lithuania
 *  Author: GDR/EDE
@@ -78,13 +78,6 @@ int main(void)
 {
 	SBC_ErrorCode sbc_err;
     cy_rslt_t result;
-    uint32_t spd = 0;
-    uint32_t rev = 0;
-    uint32_t vlt = 0;
-    int32_t int_air = 0;
-    uint32_t pres = 0;
-    uint32_t flow = 0;
-    _Bool status = false;
 
     /* Initialize the device and board peripherals */
     result = cybsp_init() ;

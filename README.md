@@ -1,15 +1,17 @@
 # RDK4 SBC CAN Example
 
-Rutronik Development Kit 4 Programmable System-on-Chip CY8C4149AZE-S598 "System Basis Chip Example". 
-
-This application is intended to be used as a reference firmware example for the developers who need to quick-start with PSoC4100S Max and System Basis Chip TLE9262-3BQXV33 CANFD.
+This application is intended to be used as a reference firmware example for developers who need to quickly start with PSoC4100S Max and System Basis Chip TLE9262-3BQXV33 CAN interface.
 
  <img src="images/rdk4_top.jpg" style="zoom:20%;" />
 
 ## Requirements
 
-- [ModusToolbox® software](https://www.infineon.com/cms/en/design-support/tools/sdk/modustoolbox-software/) v3.1 or later
+- [ModusToolbox® software](https://www.infineon.com/cms/en/design-support/tools/sdk/modustoolbox-software/) v3.2 or later.
 - The latest hardware release [RDK4 Rev2](https://github.com/RutronikSystemSolutions/RDK4_Hardware_Files).
+
+## Supported toolchains (make variable 'TOOLCHAIN')
+
+- GNU Arm&reg; Embedded Compiler v11.3.1 (`GCC_ARM`) - Default value of `TOOLCHAIN`
 
 ## Using the code example
 
@@ -54,6 +56,10 @@ The firmware example uses KitProg3 Debug UART for debug output. It shows the inc
 If you successfully have imported the example, the debug configurations are already prepared to use with the KitProg3 or MiniProg4. Open the ModusToolbox perspective and find the Quick Panel. Click on the desired debug launch configuration and wait for the programming to complete and the debugging process to start.
 
 <img src="images/debug_launch.png" style="zoom:100%;" />
+
+#### SBC Development Mode
+
+A special mode, called SBC Development Mode, is available during software development or debugging of the system. The watchdog counter is stopped and does not need to be triggered. This mode can be accessed by setting the TEST [**FO3**] pin to GND during SBC Init Mode.
 
 ### Cable Assembly
 
