@@ -1,17 +1,17 @@
 # RDK4 SBC CAN Example
 
-This application is intended to be used as a reference firmware example for developers who need to quickly start with PSoC4100S Max and System Basis Chip TLE9262-3BQXV33 CAN interface.
+This application is intended to serve as a reference firmware example for developers who need to quickly get started with the PSoC4100S Max and the System Basis Chip TLE9262-3BQXV33 CAN interface.
 
  <img src="images/rdk4_top.jpg" style="zoom:20%;" />
 
 ## Requirements
 
-- [ModusToolbox® software](https://www.infineon.com/cms/en/design-support/tools/sdk/modustoolbox-software/) v2025.4.0
+- [ModusToolbox® software](https://www.infineon.com/cms/en/design-support/tools/sdk/modustoolbox-software/) v3.7
 - The latest hardware release [RDK4 Rev2](https://github.com/RutronikSystemSolutions/RDK4_Hardware_Files).
 
 ## Supported toolchains (make variable 'TOOLCHAIN')
 
-- GNU Arm&reg; Embedded Compiler v11.3.1 (`GCC_ARM`) - Default value of `TOOLCHAIN`
+- GNU Arm&reg; Embedded Compiler v14.2.1 (`GCC_ARM`) - Default value of `TOOLCHAIN`
 
 ## Using the code example
 
@@ -46,26 +46,20 @@ For more details, see the [Eclipse IDE for ModusToolbox&trade; software user gui
 
 ### Operation
 
-The firmware example uses KitProg3 Debug UART for debug output. It shows the incoming messages and replay them with ID+1.
+The firmware example uses KitProg3 Debug UART for debug output. It shows incoming messages and replies to them, with IDs incremented by 1.
 
 <img src="images/Terminal_Output.png" style="zoom:100%;" />
 <img src="images/KCAN.png" style="zoom:100%;" />
 
 ### Debugging
 
-If you successfully have imported the example, the debug configurations are already prepared to use with the KitProg3 or MiniProg4. Open the ModusToolbox perspective and find the Quick Panel. Click on the desired debug launch configuration and wait for the programming to complete and the debugging process to start.
+If you have successfully imported the example, the debug configurations are already prepared to use with the KitProg3 or MiniProg4. Open the ModusToolbox perspective and find the Quick Panel. Click the desired debug launch configuration, then wait for programming to complete and debugging to start.
 
 <img src="images/debug_launch.png" style="zoom:100%;" />
 
 #### SBC Development Mode
 
-A special mode, called SBC Development Mode, is available during software development or debugging of the system. The watchdog counter is stopped and does not need to be triggered. This mode can be accessed by setting the TEST [**FO3**] pin to GND during SBC Init Mode.
-
-### Cable Assembly
-
-The OBD-II cable is not included in the RDK4 development kit, hence it is needed to assemble it before the example could be fully tested with a vehicle. The part of the cable is provided by Rutronik and comes together with RDK4's package. It is a cable for the Amphenol ICC Minitek MicroSpace**™** header Part No.: **10142344-104KLF**. The rest has to be done by the developers. Soldering skills are needed to assemble the OBD-II socket, please pay attention to the pinouts shown below:
-
-<img src="images/CAN_pinout.png" style="zoom:70%;" />
+A special mode, called SBC Development Mode, is available for software development or system debugging. The watchdog counter is stopped and does not need to be triggered. This mode can be accessed by setting the TEST [**FO3**] pin to GND during SBC Init Mode.
 
 
 ## Legal Disclaimer
